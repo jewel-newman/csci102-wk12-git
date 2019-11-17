@@ -17,3 +17,11 @@ def UpdateString (string1, string2, indexnum):
         else:
             editedString += char
     print("OUTPUT", editedString)
+
+def FindWordCount(loadList, foundString):
+    counter = 0
+    for word in loadList:
+        if word == foundString:
+            counter += 1
+    return counter
+
