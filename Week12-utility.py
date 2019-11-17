@@ -5,4 +5,8 @@
 def PrintOutput(statement):
     print("OUTPUT", statement)
 
-PrintOutput("Hello World")
+# PrintOutput("Hello World")
+
+def LoadFile(filename):
+    file = open(filename)
+    return file.readlines()
