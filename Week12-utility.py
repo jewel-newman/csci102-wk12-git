@@ -40,3 +40,7 @@ def ScoreFinder(playerNames, playerScores, nameWanted):
     else:
         print ("OUTPUT player not found")
 
+def Union(list1, list2):
+    combinedList = list1 + list2
+    return list(dict.fromkeys(combinedList))
+
