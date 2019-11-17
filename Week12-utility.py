@@ -5,8 +5,15 @@
 def PrintOutput(statement):
     print("OUTPUT", statement)
 
-# PrintOutput("Hello World")
-
 def LoadFile(filename):
     file = open(filename)
     return file.readlines()
+
+def UpdateString (string1, string2, indexnum):
+    editedString = ""
+    for index, char in enumerate(string1):
+        if index == indexnum:
+            editedString += string2
+        else:
+            editedString += char
+    print("OUTPUT", editedString)
