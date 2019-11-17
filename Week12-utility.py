@@ -25,3 +25,18 @@ def FindWordCount(loadList, foundString):
             counter += 1
     return counter
 
+def ScoreFinder(playerNames, playerScores, nameWanted):
+    score = 0
+    check = 0
+    playerName = ""
+    nameWanted = nameWanted.lower()
+    for index, name in enumerate(playerNames):
+        if nameWanted == name.lower():
+            score = playerScores[index]
+            check += 1
+            playerName = playerNames[index]
+    if check == 1:
+        print("OUTPUT", playerName, "got a score of", score)
+    else:
+        print ("OUTPUT player not found")
+
