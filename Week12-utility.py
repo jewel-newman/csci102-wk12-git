@@ -52,3 +52,15 @@ def Intersection(list1, list2):
                 finalList.append(thing1)
     return finalList
 
+def NotIn(list1, list2):
+    finalList = []
+    check = 0
+    for thing1 in list1:
+        for thing2 in list2:
+            if thing1 == thing2:
+                check += 1
+        if check == 0:
+            finalList.append(thing1)
+            check = 0
+    return finalList
+
