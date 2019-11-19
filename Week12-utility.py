@@ -7,7 +7,11 @@ def PrintOutput(statement):
 
 def LoadFile(filename):
     file = open(filename)
-    return file.readlines()
+    file = file.readlines()
+    for line in file:
+        newFile.append(line.strip('\n'))
+    return newFile
+    file.close()
 
 def UpdateString (string1, string2, indexnum):
     editedString = ""
@@ -20,9 +24,11 @@ def UpdateString (string1, string2, indexnum):
 
 def FindWordCount(loadList, foundString):
     counter = 0
-    for word in loadList:
-        if word == foundString:
-            counter += 1
+    for expression in loadList:
+        expression = expression.split()
+        for word in expression:
+            if word == foundString:
+                counter += 1
     return counter
 
 def ScoreFinder(playerNames, playerScores, nameWanted):
