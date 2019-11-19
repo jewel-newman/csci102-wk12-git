@@ -1,4 +1,4 @@
-# Git Repo URl: https://github.com/jewel-newman/csci102-wk12-git
+# Git Repo URL: https://github.com/jewel-newman/csci102-wk12-git
 # Jewel Newman
 # CSCI 102 - Section B
 # Week 12 - Part A/B
@@ -7,6 +7,7 @@ def PrintOutput(statement):
     print("OUTPUT", statement)
 
 def LoadFile(filename):
+    newFile = []
     file = open(filename)
     file = file.readlines()
     for line in file:
