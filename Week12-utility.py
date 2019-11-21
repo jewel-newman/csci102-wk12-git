@@ -69,6 +69,6 @@ def NotIn(list1, list2):
                 check += 1
         if check == 0:
             finalList.append(thing1)
-            check = 0
+        check = 0
     return finalList
 
